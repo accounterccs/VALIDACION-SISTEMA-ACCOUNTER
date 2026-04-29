@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <title>Accounter - Inicio de Sesión</title>
+  <link rel="stylesheet" type="text/css" href="loading.css">
+  <style>
+    /* Estilo rápido para que se vea real aunque no cargues todo el Flutter */
+    body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f5f5f5; margin: 0; }
+    .login-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 300px; text-align: center; }
+    img { width: 80px; margin-bottom: 1rem; }
+    input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    button { width: 100%; padding: 10px; background: #01579b; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    button:hover { background: #01477d; }
+  </style>
+</head>
+<body>
+
+  <div class="login-card">
+    <img src="favicon.png" alt="Logo">
+    <h2>Accounter</h2>
+    <p>Gestión de Valores y Bóvedas</p>
+    
+    <form onsubmit="event.preventDefault(); redirigirALeccion();">
+      <input type="text" placeholder="Usuario de Agencia" required>
+      <input type="password" placeholder="Contraseña" required>
+      <button type="submit">INGRESAR AL SISTEMA</button>
+    </form>
+  </div>
+
+  <script>
+    function redirigirALeccion() {
+      // Esta función simula el "robo" y envía al usuario a la página de educación
+      window.location.href = "./alerta.html";
+    }
+  </script>
+</body>
+</html>
